@@ -2,6 +2,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.utils.dates import days_ago
 from airflow.hooks.base import BaseHook
+from airflow.models import Variable
 from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
 import logging
 
